@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BEM FIT Academia · Parauapebas — Aqui você consegue, a gente te ajuda</title>
+  <meta name="description" content="BEM FIT, a academia do seu bem-estar em Parauapebas (PA). Musculação, Funcional, Zumba, FitDance, Pilates e Corrida de Rua. Segunda a sexta das 5h às 23h. Av. C, Qd 71, Lt 05, Cidade Jardim.">
+  <meta name="theme-color" content="#0a0b0a">
+  <meta property="og:title" content="BEM FIT Academia · Parauapebas">
+  <meta property="og:description" content="Aqui você consegue, a gente te ajuda. Musculação + 6 aulas coletivas inclusas. Aberta de 5h às 23h.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/foto-1.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "BEM FIT Academia",
+    "slogan": "A academia do seu bem-estar",
+    "telephone": "+55 94 99208-6764",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. C, Qd 71, Lt 05 - Cidade Jardim",
+      "addressLocality": "Parauapebas",
+      "addressRegion": "PA",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://www.instagram.com/bemfitacademia.pbs/"],
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:00", "closes": "23:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "16:00", "closes": "20:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "12:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="topo">
+    <a href="#topo" class="logo" aria-label="BEM FIT — início">
+      <svg class="logo__pulse" viewBox="0 0 40 20" aria-hidden="true"><polyline points="0,11 9,11 12,4 16,17 20,1 24,15 27,11 40,11"/></svg>
+      <span class="logo__bem">BEM</span><span class="logo__fit">FIT</span>
+    </a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#modalidades">Modalidades</a>
+      <a href="#grade">Horários</a>
+      <a href="#planos">Planos</a>
+      <a href="#visite">Visite</a>
+    </nav>
+    <a class="btn btn--sm btn--volt" data-wa="Olá! Vim pelo site e quero saber mais sobre a BEM FIT." href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__copy">
+      <div class="hero__meta">
+        <span class="status" id="status"><i></i><b>Carregando…</b></span>
+        <span class="hero__place">Cidade Jardim · Parauapebas/PA</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="line"><span>Aqui você</span></span>
+        <span class="line"><span class="volt">consegue.</span></span>
+      </h1>
+      <p class="hero__sub"><strong>A gente te ajuda.</strong> Musculação completa e seis aulas coletivas no mesmo plano — das 5h da manhã às 11 da noite.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--volt" data-wa="Olá! Quero começar a treinar na BEM FIT. Como funciona a matrícula?" href="#" target="_blank" rel="noopener">Quero começar <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#planos">Ver planos</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__frame">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/foto-1.webp" aria-label="Alunos treinando na BEM FIT">
+          <source src="assets/treino.mp4" type="video/mp4">
+        </video>
+        <span class="hero__rec"><i></i>REC · BEM FIT ao vivo do salão</span>
+      </div>
+      <a class="sticker" href="#planos" aria-label="Diária Esquenta por 20 reais">
+        <span class="sticker__k">Diária Esquenta</span>
+        <span class="sticker__v"><small>R$</small>20</span>
+        <span class="sticker__k">vem testar</span>
+      </a>
+    </div>
+
+    <svg class="ecg" viewBox="0 0 1600 140" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,90 L520,90 L548,90 L560,60 L574,118 L596,8 L618,132 L634,74 L650,90 L1000,90 L1020,90 L1030,70 L1042,108 L1058,40 L1074,118 L1086,90 L1600,90"/>
+    </svg>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Musculação</span><em>✶</em><span>Funcional</span><em>✶</em><span>Zumba</span><em>✶</em><span>FitDance</span><em>✶</em><span>Pilates no solo</span><em>✶</em><span>Corrida de rua</span><em>✶</em><span>Avaliação física</span><em>✶</em>
+      <span>Musculação</span><em>✶</em><span>Funcional</span><em>✶</em><span>Zumba</span><em>✶</em><span>FitDance</span><em>✶</em><span>Pilates no solo</span><em>✶</em><span>Corrida de rua</span><em>✶</em><span>Avaliação física</span><em>✶</em>
+    </div>
+  </div>
+
+  <!-- ============ NÚMEROS ============ -->
+  <section class="stats reveal">
+    <div class="stat"><span class="stat__n">05<small>h</small></span><span class="stat__l">a porta abre. Pra quem treina antes do expediente.</span></div>
+    <div class="stat"><span class="stat__n">23<small>h</small></span><span class="stat__l">a última luz apaga. Pra quem só consegue depois.</span></div>
+    <div class="stat"><span class="stat__n">7<small>/7</small></span><span class="stat__l">dias por semana. Sábado, domingo e feriado também.</span></div>
+    <div class="stat"><span class="stat__n">6</span><span class="stat__l">aulas coletivas inclusas nos planos livres.</span></div>
+  </section>
+
+  <!-- ============ MANIFESTO ============ -->
+  <section class="manifesto reveal">
+    <p class="eyebrow">Por que BEM FIT</p>
+    <p class="manifesto__text">
+      Aqui ninguém treina sozinho. Tem professor no salão, tem turma no funcional, tem gente correndo junto às 5h30 da manhã.
+      <span class="dim">Motivação é pra começar.</span> <span class="volt">Hábito é pra continuar</span> — e a gente está do seu lado nos dois.
+    </p>
+  </section>
+
+  <!-- ============ MODALIDADES ============ -->
+  <section class="mods" id="modalidades">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Modalidades</p>
+      <h2 class="sec-title">Um plano.<br><span class="volt">Seis jeitos</span> de suar.</h2>
+    </header>
+
+    <ol class="mods__list">
+      <li class="mod reveal">
+        <span class="mod__n">01</span>
+        <h3 class="mod__name">Musculação</h3>
+        <p class="mod__desc">Salão amplo e climatizado, máquinas, pesos livres e professores acompanhando seu treino.</p>
+        <span class="mod__when">Todo horário de funcionamento</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__n">02</span>
+        <h3 class="mod__name">Funcional</h3>
+        <p class="mod__desc">Circuito em turma, ritmo alto, corpo inteiro. A aula que mais lota de noite.</p>
+        <span class="mod__when">Seg · Qua · Sex — 19h</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__n">03</span>
+        <h3 class="mod__name">Zumba</h3>
+        <p class="mod__desc">Dança, suor e muita risada. Cardio sem cara de cardio.</p>
+        <span class="mod__when">Seg · Qua — 18h</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__n">04</span>
+        <h3 class="mod__name">FitDance</h3>
+        <p class="mod__desc">Coreografias dos hits do momento pra queimar calorias sem perceber.</p>
+        <span class="mod__when">Ter · Qui — 19h</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__n">05</span>
+        <h3 class="mod__name">Pilates no solo</h3>
+        <p class="mod__desc">Postura, mobilidade e core forte. Ótimo pra quem está começando ou voltando.</p>
+        <span class="mod__when">Seg · Qua · Sex — 17h &nbsp;/&nbsp; Ter · Qui — 6h</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__n">06</span>
+        <h3 class="mod__name">Corrida de rua</h3>
+        <p class="mod__desc">Equipe BEM FIT Running: treino orientado nas ruas de Parauapebas, do iniciante à prova.</p>
+        <span class="mod__when">Ter · Qui · Sáb — 5h30</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ GRADE ============ -->
+  <section class="grade" id="grade">
+    <header class="sec-head sec-head--row reveal">
+      <div>
+        <p class="eyebrow">Grade de aulas coletivas</p>
+        <h2 class="sec-title">Qual é a<br><span class="volt">próxima?</span></h2>
+      </div>
+      <div class="next" id="next" aria-live="polite">
+        <span class="next__k">Próxima aula</span>
+        <span class="next__name">—</span>
+        <span class="next__when">—</span>
+      </div>
+    </header>
+
+    <div class="days reveal" role="tablist" aria-label="Dias da semana" id="days"></div>
+    <div class="board reveal" id="board"></div>
+    <p class="note">Todas as aulas coletivas estão inclusas nos planos livres.</p>
+  </section>
+
+  <!-- ============ PLANOS ============ -->
+  <section class="planos" id="planos">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Planos</p>
+      <h2 class="sec-title">Escolha o que cabe<br>na <span class="volt">sua realidade.</span></h2>
+      <p class="sec-sub">Todos os planos valem de segunda a domingo, com acesso às aulas coletivas.</p>
+    </header>
+
+    <!-- Plan finder -->
+    <div class="finder reveal" id="finder">
+      <div class="finder__q">
+        <span class="finder__label">1 · Quantas vezes por semana?</span>
+        <div class="chips" data-q="freq">
+          <button data-v="3x">Até 3x</button>
+          <button data-v="livre" class="on">Todo dia que der</button>
+        </div>
+      </div>
+      <div class="finder__q">
+        <span class="finder__label">2 · Vai treinar com alguém da família?</span>
+        <div class="chips" data-q="fam">
+          <button data-v="sim">Sim</button>
+          <button data-v="nao" class="on">Só eu</button>
+        </div>
+      </div>
+      <div class="finder__q">
+        <span class="finder__label">3 · Topa plano anual no cartão?</span>
+        <div class="chips" data-q="fid">
+          <button data-v="sim">Topo</button>
+          <button data-v="nao" class="on">Prefiro sem fidelidade</button>
+        </div>
+      </div>
+      <div class="finder__out">
+        <span class="finder__k">Pra você:</span>
+        <strong class="finder__plan" id="fPlan">Plano Livre Mensal</strong>
+        <span class="finder__price" id="fPrice">R$ 119,99/mês</span>
+        <span class="finder__why" id="fWhy">Liberdade total, sem fidelidade.</span>
+        <a class="btn btn--volt btn--sm" id="fCta" href="#" target="_blank" rel="noopener">Quero esse →</a>
+      </div>
+    </div>
+
+    <div class="plans">
+      <article class="plan reveal" data-plan="mensal">
+        <h3 class="plan__name">Livre Mensal</h3>
+        <p class="plan__price"><small>R$</small>119<sup>,99</sup><span>/mês</span></p>
+        <ul class="plan__list">
+          <li>Horário livre</li>
+          <li>Todas as aulas coletivas</li>
+          <li>Sem fidelidade</li>
+        </ul>
+        <a class="btn btn--line" data-wa="Olá! Tenho interesse no Plano Livre Mensal (R$ 119,99)." href="#" target="_blank" rel="noopener">Assinar</a>
+      </article>
+
+      <article class="plan plan--hero reveal" data-plan="anual">
+        <span class="plan__tag">Menor mensalidade</span>
+        <h3 class="plan__name">Livre Anual</h3>
+        <p class="plan__price"><small>R$</small>109<sup>,99</sup><span>/mês</span></p>
+        <ul class="plan__list">
+          <li>Horário livre + aulas coletivas</li>
+          <li>Recorrente no cartão — não ocupa o limite total</li>
+          <li>Visa e Mastercard</li>
+          <li>Plano com fidelidade de 12 meses</li>
+        </ul>
+        <a class="btn btn--volt" data-wa="Olá! Tenho interesse no Plano Livre Anual (R$ 109,99/mês no cartão)." href="#" target="_blank" rel="noopener">Assinar</a>
+      </article>
+
+      <article class="plan reveal" data-plan="familia">
+        <h3 class="plan__name">Família</h3>
+        <p class="plan__price"><small>R$</small>114<sup>,99</sup><span>/pessoa</span></p>
+        <ul class="plan__list">
+          <li>A partir de 2 membros juntos</li>
+          <li>Pai, mãe, cônjuge, filhos e irmãos</li>
+          <li>Horário livre + aulas coletivas</li>
+        </ul>
+        <a class="btn btn--line" data-wa="Olá! Tenho interesse no Plano Família (R$ 114,99 por pessoa)." href="#" target="_blank" rel="noopener">Assinar</a>
+      </article>
+
+      <article class="plan reveal" data-plan="3x">
+        <h3 class="plan__name">3x na Semana</h3>
+        <p class="plan__price"><small>R$</small>100<sup>,00</sup><span>/mês</span></p>
+        <ul class="plan__list">
+          <li>Três dias por semana</li>
+          <li>Horário livre nesses dias</li>
+          <li>Ideal pra rotina apertada</li>
+        </ul>
+        <a class="btn btn--line" data-wa="Olá! Tenho interesse no Plano 3x na Semana (R$ 100,00)." href="#" target="_blank" rel="noopener">Assinar</a>
+      </article>
+    </div>
+
+    <div class="extras reveal">
+      <div class="extra" data-plan="trimestral"><span>Trimestral</span><b>R$ 345,00</b><em>sai R$ 115/mês</em></div>
+      <div class="extra" data-plan="semestral"><span>Semestral</span><b>R$ 690,00</b><em>sai R$ 115/mês</em></div>
+      <div class="extra" data-plan="diaria"><span>Diária Esquenta</span><b>R$ 20,00</b><em>pra conhecer</em></div>
+      <div class="extra"><span>Avaliação Física</span><b>R$ 85,00</b><em>com agendamento</em></div>
+      <div class="extra"><span>Avaliação Clínica</span><b>R$ 300,00</b><em>com agendamento</em></div>
+    </div>
+
+    <aside class="teen reveal">
+      <span class="teen__badge">12–17</span>
+      <p><strong>Adolescentes são bem-vindos.</strong> Para alunos de 12 a 17 anos a avaliação física é obrigatória, e os treinos devem ser no período diurno — à noite o fluxo de alunos é muito grande.</p>
+    </aside>
+  </section>
+
+  <!-- ============ GALERIA ============ -->
+  <section class="galeria" id="galeria">
+    <header class="sec-head sec-head--row reveal">
+      <div>
+        <p class="eyebrow">Por dentro</p>
+        <h2 class="sec-title">Tijolinho, ferro<br>e <span class="volt">gente de verdade.</span></h2>
+      </div>
+      <a class="link-arrow" href="https://www.instagram.com/bemfitacademia.pbs/" target="_blank" rel="noopener">Mais no Instagram @bemfitacademia.pbs →</a>
+    </header>
+    <div class="strip" tabindex="0" aria-label="Fotos da academia — role para o lado">
+      <figure><img src="assets/foto-2.webp" alt="Aluna fazendo agachamento no rack" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-3.webp" alt="Aluno fazendo rosca direta com barra" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-4.webp" alt="Alunos treinando bíceps no banco Scott com acompanhamento" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-1.webp" alt="Letreiro BEM FIT iluminado na parede da academia" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-6.webp" alt="Aluno na remada sentada" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-5.webp" alt="Pilha de anilhas de uma máquina" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-7.webp" alt="Aluno na barra fixa em frente à parede de tijolos" loading="lazy" width="640" height="1022"></figure>
+      <figure><img src="assets/foto-8.webp" alt="Aluna caminhando na esteira" loading="lazy" width="640" height="1022"></figure>
+    </div>
+  </section>
+
+  <!-- ============ RUNNING ============ -->
+  <section class="run reveal">
+    <div class="run__inner">
+      <p class="eyebrow eyebrow--ink">Equipe BEM FIT Running</p>
+      <h2 class="run__title">Corra pela saúde.<br>Pela superação.<br>Pelo prazer.</h2>
+      <p class="run__text">Terça, quinta e sábado às 5h30 a equipe sai pra rua. Tem quem corre os primeiros 3 km e tem quem já está treinando pra prova — todo mundo junto.</p>
+      <a class="btn btn--ink" data-wa="Olá! Quero entrar na equipe BEM FIT Running." href="#" target="_blank" rel="noopener">Entrar na equipe →</a>
+    </div>
+    <svg class="run__ecg" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,70 L230,70 L246,40 L262,104 L284,6 L306,112 L320,58 L334,70 L600,70"/></svg>
+  </section>
+
+  <!-- ============ VISITE ============ -->
+  <section class="visite" id="visite">
+    <div class="visite__info reveal">
+      <p class="eyebrow">Visite a gente</p>
+      <h2 class="sec-title visite__title">Av. C, Qd 71, Lt 05<br><span class="volt">Cidade Jardim</span></h2>
+      <p class="sec-sub">Parauapebas · PA</p>
+
+      <table class="hours" id="hours">
+        <tbody>
+          <tr data-d="1,2,3,4,5"><th>Segunda a sexta</th><td>5h às 23h</td></tr>
+          <tr data-d="6"><th>Sábado</th><td>8h às 12h · 16h às 20h</td></tr>
+          <tr data-d="0"><th>Domingo</th><td>8h às 12h</td></tr>
+          <tr><th>Feriados</th><td>8h às 12h · 14h às 18h</td></tr>
+        </tbody>
+      </table>
+
+      <div class="contacts">
+        <a class="btn btn--volt" data-wa="Olá! Vim pelo site da BEM FIT." href="#" target="_blank" rel="noopener">(94) 99208-6764 · WhatsApp</a>
+        <a class="btn btn--line" href="https://www.instagram.com/bemfitacademia.pbs/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=BEM+FIT+Academia+Cidade+Jardim+Parauapebas" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="visite__map reveal">
+      <iframe title="Mapa da BEM FIT Academia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=BEM%20FIT%20Academia%20Cidade%20Jardim%20Parauapebas%20PA&z=15&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="foot__cta">
+      <p>Daqui a algum tempo, você vai se arrepender de não ter começado hoje.</p>
+      <a class="btn btn--volt" data-wa="Olá! Decidi começar hoje. Quero me matricular na BEM FIT." href="#" target="_blank" rel="noopener">Começar hoje →</a>
+    </div>
+    <div class="foot__mark" aria-hidden="true">BEM<span>FIT</span></div>
+    <div class="foot__bar">
+      <span>BEM FIT Academia · A academia do seu bem-estar</span>
+      <span>Av. C, Qd 71, Lt 05 · Cidade Jardim · Parauapebas/PA</span>
+      <span>© <span id="ano">2026</span></span>
+    </div>
+  </footer>
+
+  <a class="fab" data-wa="Olá! Vim pelo site da BEM FIT." href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7a.6.6 0 0 0 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c0-.2-.3-.3-.6-.4Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
