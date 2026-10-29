@@ -88,7 +88,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   content: ""; position: absolute; z-index: -1; left: -2%; right: -6%; bottom: -.16em; height: .2em;
   background: var(--brush) center / 100% 100% no-repeat;
 }
-.band .brushed::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 40' preserveAspectRatio='none'%3E%3Cpath fill='%230a0b0a' d='M4 22c40-9 95-13 160-14 70-1 150 1 228 6 6 1 7 7 1 8-50 3-96 2-150 4-60 2-120 7-180 9-25 1-46 0-58-2-6-1-7-9-1-11Zm40-13c30-4 62-5 95-5 5 0 5 3 0 3-32 1-64 3-95 5-3 0-3-3 0-3Z'/%3E%3C/svg%3E"); }
+.band .brushed::after { height: .16em; bottom: -.12em; filter: brightness(0); }
 .sec-sub { color: var(--muted); max-width: 52ch; margin: 20px 0 0; }
 .sec-head { padding: 0 var(--gut); max-width: var(--max); margin: 0 auto 56px; }
 .sec-head--row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
@@ -123,7 +123,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   padding: 16px var(--gut);
   transition: background .3s, backdrop-filter .3s, padding .3s;
 }
-.nav.scrolled { background: rgba(10, 11, 10, .82); backdrop-filter: blur(14px); padding-block: 10px; border-bottom: 1px solid var(--line); }
+.nav.scrolled { padding-block: 10px; }
+/* o blur fica num pseudo-elemento: backdrop-filter no próprio .nav prenderia o menu mobile (position: fixed) dentro da barra */
+.nav::before { content: ""; position: absolute; inset: 0; z-index: -2; background: rgba(10, 11, 10, .82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); opacity: 0; transition: opacity .3s; }
+.nav.scrolled::before { opacity: 1; }
 .logo { display: flex; align-items: center; }
 .logo__pulse { width: 30px; height: 18px; margin-right: 4px; fill: none; stroke: var(--volt); stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
 .logo__fit { color: var(--volt); }
@@ -236,14 +239,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
    MODALIDADES
    ========================================================== */
 .mods { padding: 0 0 120px; }
-.band { position: relative; background: var(--volt); color: var(--ink); overflow: hidden; margin-bottom: 0; }
+.band { position: relative; background: #fff; color: var(--ink); overflow: hidden; margin-bottom: 0; }
 .band::before { /* piso de borracha, como na arte */
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 34px;
   background: #151715 repeating-linear-gradient(90deg, transparent 0 180px, rgba(255,255,255,.05) 180px 181px);
 }
 .band__inner { max-width: var(--max); margin: 0 auto; padding: 120px var(--gut) 150px; position: relative; }
 .band__title { font-size: clamp(64px, 10.5vw, 168px); line-height: .9; margin: 0; }
-.band__title .outline { font-size: 1.12em; }
+.band__title .outline { font-size: 1.12em; color: var(--volt); }
+.band .eyebrow--ink::before { background: var(--volt); }
 .band__sub { font: 600 clamp(22px, 2.4vw, 34px)/1.15 var(--f-body); letter-spacing: -.01em; margin: 40px 0 0; }
 .band__list {
   position: absolute; right: max(var(--gut), calc((100vw - var(--max)) / 2 + var(--gut))); bottom: 90px;
@@ -451,9 +455,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 @media (max-width: 860px) {
-  .nav__links { position: fixed; inset: 0; background: var(--ink); flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 var(--gut); gap: 8px; transform: translateY(-100%); transition: transform .5s var(--ease); z-index: -1; }
-  .nav__links a { font: 400 64px/1.05 var(--f-display); text-transform: uppercase; color: var(--bone); }
-  .nav.open .nav__links { transform: none; }
+  .nav__links { position: fixed; inset: 0; height: 100dvh; background: var(--ink); flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 var(--gut); gap: 8px; transform: translateY(-100%); visibility: hidden; transition: transform .5s var(--ease), visibility 0s .5s; z-index: -1; }
+  .nav__links a { font: 400 clamp(44px, 14vw, 64px)/1.05 var(--f-display); text-transform: uppercase; color: var(--bone); }
+  .nav.open .nav__links { transform: none; visibility: visible; transition: transform .5s var(--ease), visibility 0s; }
+  .mod__when { margin-right: 72px; } /* não ficar embaixo do botão do WhatsApp */
   .nav .btn--sm { display: none; }
   .nav__burger { display: block; margin-left: auto; }
 
